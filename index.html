@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>February Team Retrospective</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f3f4f6; }
+        .card { background: white; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); padding: 1.5rem; }
+    </style>
+</head>
+<body class="text-gray-800 antialiased p-4 md:p-8">
+
+    <div class="max-w-5xl mx-auto space-y-6">
+        
+        <!-- Header -->
+        <header class="text-center space-y-2 mb-8">
+            <h1 class="text-4xl font-extrabold text-indigo-900 tracking-tight">February Retrospective <i class="fa-solid fa-rocket text-indigo-500"></i></h1>
+            <p class="text-lg text-gray-600 font-medium">A Month of Growth, Transitions, and Breaking Records</p>
+            <div class="flex flex-wrap justify-center gap-3 mt-4">
+                <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-semibold">👥 9 Agents (All Newbies)</span>
+                <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm font-semibold">🎯 Hit 80% QA Target</span>
+                <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-semibold">🚀 L2 Email Queue Launched</span>
+                <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm font-semibold">⏱️ Intro to AHT Tracking</span>
+            </div>
+        </header>
+
+        <!-- Quick Stats Row -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="card border-l-4 border-yellow-500">
+                <div class="flex justify-between items-center">
+                    <div>
+                        <p class="text-sm text-gray-500 font-bold uppercase">Newbie QA Score</p>
+                        <p class="text-3xl font-bold text-gray-800 mt-1">82.7%</p>
+                    </div>
+                    <i class="fa-solid fa-star text-3xl text-yellow-200"></i>
+                </div>
+                <p class="text-sm text-yellow-600 mt-2 font-medium"><i class="fa-solid fa-arrow-up"></i> Target: 80%</p>
+            </div>
+            <div class="card border-l-4 border-green-500">
+                <div class="flex justify-between items-center">
+                    <div>
+                        <p class="text-sm text-gray-500 font-bold uppercase">L2 Email MHT</p>
+                        <p class="text-3xl font-bold text-gray-800 mt-1">7.77 <span class="text-sm font-normal text-gray-500">mins</span></p>
+                    </div>
+                    <i class="fa-solid fa-envelope text-3xl text-green-200"></i>
+                </div>
+                <p class="text-sm text-green-600 mt-2 font-medium"><i class="fa-solid fa-arrow-down"></i> Beating 8 min target!</p>
+            </div>
+            <div class="card border-l-4 border-blue-500">
+                <div class="flex justify-between items-center">
+                    <div>
+                        <p class="text-sm text-gray-500 font-bold uppercase">Email Adherence</p>
+                        <p class="text-3xl font-bold text-gray-800 mt-1">95.9%</p>
+                    </div>
+                    <i class="fa-solid fa-clock text-3xl text-blue-200"></i>
+                </div>
+                <p class="text-sm text-blue-600 mt-2 font-medium"><i class="fa-solid fa-arrow-up"></i> Target: 89%</p>
+            </div>
+            <div class="card border-l-4 border-orange-500">
+                <div class="flex justify-between items-center">
+                    <div>
+                        <p class="text-sm text-gray-500 font-bold uppercase">Email Escalations</p>
+                        <p class="text-3xl font-bold text-gray-800 mt-1">2.4%</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-trend-down text-3xl text-orange-200"></i>
+                </div>
+                <p class="text-sm text-orange-600 mt-2 font-medium"><i class="fa-solid fa-arrow-down"></i> Down from 5.9% in Jan</p>
+            </div>
+        </div>
+
+        <!-- Two Column Layout for Main Content -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            
+            <!-- The Wins -->
+            <div class="card space-y-4">
+                <h2 class="text-2xl font-bold text-gray-800 flex items-center gap-2">
+                    <i class="fa-solid fa-star text-yellow-400"></i> The Wins
+                </h2>
+                <ul class="space-y-3 text-gray-700">
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check-circle text-green-500 mt-1"></i>
+                        <span><strong>Massive Efficiency Gains:</strong> MHT dropped drastically across all channels as the team gained confidence. We actually hit the 12-minute Phone target (11.73) in the final week!</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check-circle text-green-500 mt-1"></i>
+                        <span><strong>L2 Transition Success:</strong> The Jan cohort dominated the L2 Email queue with an impressive 7.77-minute MHT right out of the gate.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check-circle text-green-500 mt-1"></i>
+                        <span><strong>Rock-Solid Adherence:</strong> Showed up and showed out. Adherence targets (89% min) were consistently smashed (Email: 95.9%, Phone: 92.7%, Chat: 92.3%).</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check-circle text-green-500 mt-1"></i>
+                        <span><strong>AHT Conditioning:</strong> Started tracking AHT mid-month and times are already dropping nicely (Phone down to 15.48, Email to 11.38).</span>
+                    </li>
+                </ul>
+                <div class="mt-6">
+                    <h3 class="text-sm font-bold text-gray-500 uppercase text-center mb-2">MHT Reduction (Jan vs Feb)</h3>
+                    <div class="relative h-48 w-full">
+                        <canvas id="mhtChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Opportunities -->
+            <div class="card space-y-4 bg-indigo-50 border border-indigo-100">
+                <h2 class="text-2xl font-bold text-indigo-900 flex items-center gap-2">
+                    <i class="fa-solid fa-magnifying-glass-chart text-indigo-500"></i> Areas for Focus
+                </h2>
+                <ul class="space-y-3 text-indigo-900">
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-circle-exclamation text-orange-500 mt-1"></i>
+                        <span><strong>Resolution Rate Gap:</strong> Overall resolution dropped from 60.53% to 46.99% (Target: 68%). We must ensure speed isn't coming at the cost of first-contact resolution.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-circle-exclamation text-orange-500 mt-1"></i>
+                        <span><strong>Quality Consistency:</strong> Answer quality improved overall (82.7%), but weekly data is a rollercoaster. We need steady performance to hit that 90% target consistently.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-circle-exclamation text-orange-500 mt-1"></i>
+                        <span><strong>Chat MHT Plateau:</strong> Chat times flattened around 15.4 mins for the last 3 weeks. We need to identify the bottleneck preventing us from reaching the 12-min goal.</span>
+                    </li>
+                </ul>
+                <div class="mt-6">
+                    <h3 class="text-sm font-bold text-gray-500 uppercase text-center mb-2">Weekly Resolution Rate Trend (%)</h3>
+                    <div class="relative h-48 w-full">
+                        <canvas id="resChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- RCA & Team Recognition -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            
+            <!-- Resolution Rate RCA -->
+            <div class="card space-y-4 border-t-4 border-red-400">
+                <h2 class="text-2xl font-bold text-gray-800 flex items-center gap-2">
+                    <i class="fa-solid fa-microscope text-red-500"></i> Resolution Rate RCA
+                </h2>
+                <p class="text-gray-600 font-medium">Root cause analysis for "No" answers on surveys.</p>
+                <div class="bg-red-50 p-4 rounded-xl border border-red-100 text-red-900">
+                    <div class="flex items-center gap-2 font-bold mb-3 pb-2 border-b border-red-200">
+                        <i class="fa-solid fa-credit-card text-red-500"></i> Main Driver: Wise Card Issues
+                    </div>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-users text-red-400 mt-1"></i> 
+                            <div>
+                                <strong>35% People Issues</strong>
+                                <ul class="mt-1 space-y-1 text-red-700 font-medium">
+                                    <li>• 4 cases: Incorrect Action</li>
+                                    <li>• 2 cases: Customer Engagement</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Recognition Card -->
+            <div class="card space-y-4 border-t-4 border-yellow-400 bg-gradient-to-br from-white to-yellow-50">
+                <h2 class="text-2xl font-bold text-gray-800 flex items-center gap-2">
+                    <i class="fa-solid fa-shield-halved text-yellow-500"></i> Guardian of the North
+                </h2>
+                <p class="text-gray-600 font-medium">Team-wide Resolution Rate Recognition Competition.</p>
+                <div class="bg-white/80 p-4 rounded-xl border border-yellow-200 shadow-sm flex flex-col justify-between">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="bg-yellow-100 p-4 rounded-full text-yellow-600 shadow-inner">
+                            <i class="fa-solid fa-trophy text-3xl"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold uppercase text-gray-500">Top Performer (Jan - Feb)</p>
+                            <p class="text-3xl font-extrabold text-gray-800">85.71% <span class="text-sm font-normal text-gray-600">Resolution Rate</span></p>
+                            <p class="text-sm text-gray-500 font-medium">Achieved over 14 survey results!</p>
+                        </div>
+                    </div>
+                    <a href="https://transferwise.atlassian.net/wiki/spaces/CTS2/pages/4009571056/Mission+Guardian+of+the+North" target="_blank" class="inline-block w-full text-center bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2.5 px-4 rounded-lg transition-colors shadow-sm">
+                        View Mission Details <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Side by Side Observations -->
+        <div class="card space-y-4 border-t-4 border-teal-500">
+            <h2 class="text-2xl font-bold text-gray-800 flex items-center gap-2">
+                <i class="fa-solid fa-headphones text-teal-500"></i> Side-by-Side (SBS) Observations
+            </h2>
+            <p class="text-gray-600 mb-4 font-medium">Insights from 4 shadowing sessions conducted across 3 channels in February.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Finding 1 -->
+                <div class="bg-gray-50 p-5 rounded-xl border border-gray-200 flex flex-col h-full shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="p-2 bg-blue-100 rounded-lg text-blue-600">
+                            <i class="fa-solid fa-magnifying-glass text-xl"></i>
+                        </div>
+                        <h3 class="font-bold text-gray-800 leading-tight">1. Strong Core Investigation</h3>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-5 flex-grow">The team demonstrates a solid foundational ability to investigate issues, utilizing resources effectively to track down correct answers. Great proactive approach in organizing findings directly into notes to guide the workflow.</p>
+                    <div class="bg-blue-50 text-blue-800 p-3 rounded-lg text-sm border border-blue-100 font-medium">
+                        <strong>🎯 My Takeaway:</strong> The team knows how to look for information, giving us a solid, confident baseline to work from.
+                    </div>
+                </div>
+
+                <!-- Finding 2 -->
+                <div class="bg-gray-50 p-5 rounded-xl border border-gray-200 flex flex-col h-full shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="p-2 bg-green-100 rounded-lg text-green-600">
+                            <i class="fa-solid fa-laptop-code text-xl"></i>
+                        </div>
+                        <h3 class="font-bold text-gray-800 leading-tight">2. High Tech & Ops Proficiency</h3>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-5 flex-grow">Good speed and confidence in operational/technical workflows. The team remains calm on calls, with excellent fast typing skills and strong grammar. It was great to see significant improvement from our newest members.</p>
+                    <div class="bg-green-50 text-green-800 p-3 rounded-lg text-sm border border-green-100 font-medium">
+                        <strong>🎯 My Takeaway:</strong> Since basic mechanics are well-handled, coaching efforts can now shift toward more advanced skills.
+                    </div>
+                </div>
+
+                <!-- Finding 3 -->
+                <div class="bg-gray-50 p-5 rounded-xl border border-gray-200 flex flex-col h-full shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="p-2 bg-purple-100 rounded-lg text-purple-600">
+                            <i class="fa-solid fa-comments text-xl"></i>
+                        </div>
+                        <h3 class="font-bold text-gray-800 leading-tight">3. Soft Skills & Assertiveness</h3>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-5 flex-grow">Need support with customer-facing confidence and tone management. In some instances, the tone is passive (lacking a "smile" on the call), and there is noticeable discomfort when having to disagree with or educate a customer.</p>
+                    <div class="bg-purple-50 text-purple-800 p-3 rounded-lg text-sm border border-purple-100 font-medium">
+                        <strong>🎯 My Takeaway:</strong> Primary focus for upcoming training: communication nuances (professional pushback, confident education, warm tone).
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Looking Ahead / March Focus -->
+        <div class="card bg-gradient-to-r from-gray-900 to-indigo-900 text-white mt-6">
+            <h2 class="text-2xl font-bold flex items-center gap-2 mb-4">
+                <i class="fa-solid fa-bullseye text-red-400"></i> March Focus: The Probation Sprint
+            </h2>
+            <p class="mb-4 text-gray-200">With 6 agents completing probation this month, our absolute focus is balancing our newfound speed with accuracy and quality.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+                <div class="bg-white/10 p-4 rounded-lg backdrop-blur-sm border border-white/20">
+                    <div class="text-xl mb-2">🕵️‍♀️</div>
+                    <h3 class="font-bold text-lg">Resolution Deep Dive</h3>
+                    <p class="text-sm text-gray-300 mt-1">Audit repeat contacts. Are we closing tickets too early? Focus on thorough troubleshooting.</p>
+                </div>
+                <div class="bg-white/10 p-4 rounded-lg backdrop-blur-sm border border-white/20">
+                    <div class="text-xl mb-2">⏱️</div>
+                    <h3 class="font-bold text-lg">AHT Transition</h3>
+                    <p class="text-sm text-gray-300 mt-1">Continue conditioning the team on Average Handling Time metrics ahead of the official Q2 shift.</p>
+                </div>
+                <div class="bg-white/10 p-4 rounded-lg backdrop-blur-sm border border-white/20">
+                    <div class="text-xl mb-2">💬</div>
+                    <h3 class="font-bold text-lg">Chat Shadowing</h3>
+                    <p class="text-sm text-gray-300 mt-1">Conduct live shadowing on Chats to break through the 15-minute plateau and identify systemic blockers.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // Chart.js Configuration
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            // MHT Comparison Chart (Bar)
+            const mhtCtx = document.getElementById('mhtChart').getContext('2d');
+            new Chart(mhtCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['Email', 'Phone', 'Chat'],
+                    datasets: [
+                        {
+                            label: 'January MHT',
+                            data: [16.32, 24.90, 22.23],
+                            backgroundColor: 'rgba(156, 163, 175, 0.6)', // Gray
+                            borderColor: 'rgba(156, 163, 175, 1)',
+                            borderWidth: 1,
+                            borderRadius: 4
+                        },
+                        {
+                            label: 'February MHT',
+                            data: [9.98, 15.13, 15.48],
+                            backgroundColor: 'rgba(99, 102, 241, 0.8)', // Indigo
+                            borderColor: 'rgba(99, 102, 241, 1)',
+                            borderWidth: 1,
+                            borderRadius: 4
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { position: 'top', labels: { boxWidth: 12, font: {family: 'Inter'} } }
+                    },
+                    scales: {
+                        y: { 
+                            beginAtZero: true, 
+                            title: { display: true, text: 'Minutes', font: {family: 'Inter'} }
+                        }
+                    }
+                }
+            });
+
+            // Resolution Rate Trend Chart (Line)
+            const resCtx = document.getElementById('resChart').getContext('2d');
+            new Chart(resCtx, {
+                type: 'line',
+                data: {
+                    labels: ['Jan 19', 'Jan 26', 'Feb 2', 'Feb 9', 'Feb 16', 'Feb 23'],
+                    datasets: [{
+                        label: 'Overall Resolution Rate (%)',
+                        data: [47.06, 63.16, 31.58, 46.67, 59.26, 52.00],
+                        borderColor: 'rgba(249, 115, 22, 1)', // Orange
+                        backgroundColor: 'rgba(249, 115, 22, 0.1)',
+                        borderWidth: 3,
+                        pointBackgroundColor: 'rgba(249, 115, 22, 1)',
+                        pointRadius: 4,
+                        fill: true,
+                        tension: 0.3 // smooth curves
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false },
+                        annotation: {
+                            annotations: {
+                                line1: {
+                                    type: 'line',
+                                    yMin: 68,
+                                    yMax: 68,
+                                    borderColor: 'rgb(34, 197, 94)', // Green target line
+                                    borderWidth: 2,
+                                    borderDash: [5, 5],
+                                    label: { content: 'Target (68%)', enabled: true, position: 'end' }
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        y: { 
+                            beginAtZero: true,
+                            max: 80,
+                            title: { display: true, text: 'Percentage', font: {family: 'Inter'} }
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
